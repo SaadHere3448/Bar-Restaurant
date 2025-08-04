@@ -13,6 +13,9 @@ h3 {
     font-family: 'Playfair Display', serif;
     font-weight: 500;
 }
+.h1{
+    color: rgb(0, 1, 80);
+}
 
 /* Navigation */
 nav {
@@ -20,6 +23,7 @@ nav {
     width: 100%;
     background-color: white;
     padding: 20px 0;
+    user-select: none;
     z-index: 1000;
     border-bottom: 1px solid #ddd;
 }
@@ -156,31 +160,31 @@ nav.scrolled {
     display: flex;
     flex-direction: column;
     align-items: center;
+    user-select: none;
+    justify-content: space-between;
+}
+
+.design{
+    display: flex;
+    flex-direction: row;
+    padding: 5vw;
+    margin-bottom: 150px;
+    align-items: center;
     justify-content: space-evenly;
 }
-
-.design {
-    width: 70vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 2vw;
-    font-weight: 700;
-    letter-spacing: 1.3px;
-    word-spacing: 3px;
-    color: white;
-    justify-content: center;
-    height: 30vw;
-    filter: brightness(1) contrast(1);
-    text-align: center;
-    border-radius: 20px;
-    background-repeat: no-repeat;
-    background: url('https://tse1.mm.bing.net/th/id/OIP.nrChA659Zh_p-Ou92g766QHaE8?pid=Api&P=0&h=220') center/cover no-repeat
-}
-
-.design p {
+.des-img{
+    border-radius: 15px;
+    max-width:  60vw;
     width: 40vw;
-    line-height: 6vw;
+    max-height: 40vw;
+}
+.des-txt{
+    width: 40vw;
+    color: rgb(59, 59, 59);
+    padding: 10px;
+    font-size: 2vw;
+    font-weight: 400;
+    margin-left: 30px;
 }
 
 /* ========== Responsive Media Queries ========== */
