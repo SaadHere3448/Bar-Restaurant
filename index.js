@@ -32,16 +32,17 @@ faders.forEach(section => {
 const reveals = document.querySelectorAll('.reveal');
 
 function revealOnScroll() {
-  for (let i = 0; i < reveals.length; i++) {
-    const windowHeight = window.innerHeight;
-    const elementTop = reveals[i].getBoundingClientRect().top;
-    const elementVisible = 80;
+    for (let i = 0; i < reveals.length; i++) {
+        const windowHeight = window.innerHeight;
+        const elementTop = reveals[i].getBoundingClientRect().top;
+        const elementVisible = 80;
 
-    if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add('active');
+        if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add('active');
+        }
     }
-  }
 }
 
 window.addEventListener('scroll', revealOnScroll);
 window.addEventListener('load', revealOnScroll); // reveal immediately on page load if visible
+
