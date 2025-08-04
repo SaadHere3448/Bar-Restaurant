@@ -1,0 +1,347 @@
+/* Fonts */
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fdfaf6;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+}
+
+/* Navigation */
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    padding: 20px 0;
+    z-index: 1000;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-left li,
+.nav-right li {
+    list-style: none;
+}
+
+.nav-left a,
+.nav-right a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-left a:hover,
+.nav-right a:hover {
+    color: #aa0000;
+}
+
+.logo {
+    font-size: 28px;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1551854838-226b6b48c10d') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding-top: 80px;
+}
+
+.hero-text {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+/* Sections */
+.section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+    margin-top: 2em;
+}
+
+.menu-item {
+    background: #f7f1eb;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.dark {
+    background-color: #1b1b1b;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 0.9em;
+}
+
+/* Sticky Nav Effect */
+nav.scrolled {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Scroll Fade-In Effect */
+.section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+}
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.designs-sect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.design {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2vw;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+    word-spacing: 3px;
+    color: white;
+    justify-content: center;
+    height: 30vw;
+    filter: brightness(1) contrast(1);
+    text-align: center;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background: url('https://tse1.mm.bing.net/th/id/OIP.nrChA659Zh_p-Ou92g766QHaE8?pid=Api&P=0&h=220') center/cover no-repeat
+}
+
+.design p {
+    width: 40vw;
+    line-height: 6vw;
+}
+
+/* ========== Responsive Media Queries ========== */
+
+/* Smallest phones */
+@media (max-width: 480px) {
+    .nav-container {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px 20px;
+    }
+
+    .nav-logo {
+        font-size: 20px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        font-size: 0.85em;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 1.9em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .btn {
+        font-size: 0.85em;
+        padding: 0.6em 1.4em;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section h2 {
+        font-size: 1.6em;
+    }
+
+    .section {
+        padding: 60px 15px;
+    }
+}
+
+/* Phones (Portrait & Landscape) and Small Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+    .nav-container {
+        gap: 20px;
+        padding: 15px 30px;
+    }
+
+    .nav-logo {
+        font-size: 22px;
+    }
+
+    .nav-links {
+        gap: 25px;
+        font-size: 0.95em;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 2.4em;
+    }
+
+    .hero p {
+        font-size: 1.1em;
+    }
+
+    .btn {
+        font-size: 1em;
+    }
+
+    .menu-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Tablets (Portrait & Landscape) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .nav-container {
+        padding: 20px 50px;
+    }
+
+    .nav-logo {
+        font-size: 25px;
+    }
+
+    .nav-links {
+        gap: 30px;
+    }
+
+    .hero h1 {
+        font-size: 2.8em;
+    }
+
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section {
+        padding: 80px 40px;
+    }
+}
+
+/* Medium to Large Desktops */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .nav-container {
+        padding: 25px 70px;
+    }
+
+    .hero h1 {
+        font-size: 3.2em;
+    }
+
+    .menu-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Ultra-wide screens (large desktops, TVs) */
+@media (min-width: 1441px) {
+    .nav-container {
+        max-width: 1400px;
+        margin: auto;
+    }
+
+    .hero h1 {
+        font-size: 3.5em;
+    }
+
+    .hero p {
+        font-size: 1.3em;
+    }
+
+    .section {
+        padding: 100px 60px;
+    }
+
+    .menu-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+    }
+}
+
+/* ===== Scroll Reveal Animation ===== */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease-out;
+    will-change: opacity, transform;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
