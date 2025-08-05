@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Velvet Bar & Lounge</title>
     <link rel="stylesheet" href="index.css" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <!-- Here You Can Add Your Favicon Link Or Address -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap"
-        rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
 </head>
 
 <body>
@@ -17,17 +17,25 @@
     <!-- Navigation -->
     <nav>
         <div class="nav-container reveal">
-            <ul class="nav-left">
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#about">About</a></li>
+            <ul class="nav-left"  id="nav-left">
+                <li class="nav-items"><a target="_blank" href="#menu">Menu</a></li>
+                <li class="nav-items"><a target="_blank" href="about.html">About</a></li>
             </ul>
             <div class="logo">VELVET</div>
             <ul class="nav-right">
-                <li><a href="#events">Events</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li class="nav-items"><a target="_blank" href="#events">Events</a></li>
+                <li class="nav-items"><a target="_blank" href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
+    <aside class="hidden assy"  id="menu-bar">
+        <ul class="aside-cont">
+            <li class="aside-items" id="aside-item-1"><a href="#menu">Menu</a></li>
+            <li class="aside-items" id="aside-item-2"><a href="about.html">About</a></li>
+            <li class="aside-items" id="aside-item-3"><a href="#events">Events</a></li>
+            <li class="aside-items" id="aside-item-4"><a href="#contact">Contact</a></li>
+        </ul>
+    </aside>
 
     <!-- Hero Section -->
     <header class="hero reveal">
@@ -44,10 +52,10 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis laudantium quisquam
                 adipisci repellat veniam perspiciatis ducimus distinctio iste tempore voluptatibus!</p>
             </div>
-            <img class="des-img" src="https://tse1.mm.bing.net/th/id/OIP.zdwxv6VE2KvoliS_edVmzgHaE8?pid=Api&P=0&h=220" alt="">
+            <img class="des-img" src="https://tse1.mm.bing.net/th/id/OIP.zdwxv6VE2KvoliS_edVmzgHaE8?pid=Api&P=0&h=220" alt="design-images">
         </div>
         <div class="design reveal" id="design-2">
-            <img class="des-img" src="https://tse1.mm.bing.net/th/id/OIP.LB_5xAmn-I4P2w7DWQkU_wHaE8?pid=Api&P=0&h=220" alt="">
+            <img class="des-img" src="https://tse1.mm.bing.net/th/id/OIP.LB_5xAmn-I4P2w7DWQkU_wHaE8?pid=Api&P=0&h=220" alt="design-images">
             <div class="des-txt">
                 <h1 class="h1">Lorem, ipsum dolor.</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis laudantium quisquam
@@ -108,12 +116,11 @@
     </section>
 
     <!-- Footer -->
-<!--     <footer>
+    <footer>
         <p>&copy; 2025 Velvet Bar & Lounge. All rights reserved.</p>
-    </footer> -->
+    </footer>
 
     <script src="index.js"></script>
 </body>
 
 </html>
-
